@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="et" >
+<head>
+  <meta charset="UTF-8">
+  <title>CV Printable A4</title>
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<html lang="et" >
+   <head>
+      <title>Curriculum Vitae</title>
+      <meta name="viewport" content="width=device-width" />
+      <meta name="description" content="Margus Lillemagi - Curriculum Vitae" />
+      <meta charset="UTF-8">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link href='https://fonts.googleapis.com/css?family=Oswald:400,700|Lato:400,300' rel='stylesheet' type='text/css'>
+      <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+      <![endif]-->
+      <style>
+         body {
+         background: rgb(204,204,204); 
+         }
+         page {
+         background: #fff;
+         display: block;
+         margin: 0 auto;
+         margin-bottom: 5mm;
+         margin-top: 5mm;
+         }
+         page[size="A4"] {  
+         width: 210mm;
+         height: 457mm;
+         }
+         @page {
+         size: 210mm 457mm;
+         margin: 0; 
+         }
+         @media print { /* Print settings */
+         html, body, page {
+         width: 210mm;
+         height:100%;
+         margin: 0 !important; 
+         padding: 0 !important;
+         overflow: hidden; 
+         }
+         .no-overflow{
+         overflow: hidden; 
+         }
+         #Header, #Footer { 
+         display: none !important;
+         }
+         button {
+         display: none;
+         }
+         size: A4 portrait;
+         /* ... the rest of the rules ... */
+         }
+         html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,address,cite,code,del,dfn,em,img,ins,kbd,q,samp,small,strong,sub,sup,var,b,i,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary,time,mark,audio,video {
+         border:0;
+         font:inherit;
+         font-size:100%;
+         margin:0;
+         padding:0;
+         vertical-align:baseline;
+         }
+         article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section {
+         display:block;
+         }
+         html, body {font-family: 'Lato', helvetica, arial, sans-serif; font-size: 11pt; color: #222;}
+         .clear {clear: both;}
+         p {
+         line-height: 15pt;
+         margin-bottom: 4mm;
+         color: #444;
+         word-break: break-word;
+         }
+         a {
+            text-decoration: none;
+         }
+         a:hover { 
+            text-decoration:underline;
+         }
+         a, .fa-check, .fa-arrow-right {
+         color: #da2d2d;
+         }
+         .cv {
+         width: 210mm;
+         height: 457mm;
+         background: #fff;
+         }
+         .mainDetails {
+         padding: 8mm 0 0 8mm;
+         background: #fff;
+         }
+         #name {
+         float: left;
+         text-transform: uppercase;
+         padding: 8.5mm 0 0 7mm;
+         }
+         #name h1 {
+         font-size: 33pt;
+         font-weight: 400;
+         font-family: 'Oswald', Helvetica, Arial, sans-serif;
+         line-height: 38pt;
+         color:#da2d2d;
+         }
+         #name h2 {
+         font-size: 18pt;
+         font-family: 'Oswald', Helvetica, Arial, sans-serif;
+         line-height: 20pt;
+         }
+         #mainArea, #mainAreaTwo {
+         padding: 0 8mm;
+         }
+         #headshot {
+         width: 46mm;
+         float: left;
+         margin-top:10mm;
+         margin-left:-.5mm;
+         }
+         #headshot img {
+         width: 100%;
+         height: auto;
+         -webkit-border-radius: 50%;
+         border-radius: 50%;
+         }
+         .contactDetails {
+         float:right;
+         margin:10mm 8mm 0  0;
+         float: right;
+         }
+         .contactDetails ul { 
+         list-style-type: none;
+         font-family: 'Oswald', Helvetica, Arial, sans-serif;
+         }
+         .contactDetails ul li {
+         line-height: 24pt;
+         color: #444;
+         }
+         .contactDetails ul li a, a[href^=tel] {
+         color: #444; 
+         padding: 4px 8px;
+         text-decoration: none;
+         -webkit-transition: all .1s ease-in;
+         -moz-transition: all .1s ease-in;
+         -o-transition: all .1s ease-in;
+         -ms-transition: all .1s ease-in;
+         transition: all .1s ease-in;
+         }
+         .contactDetails ul li a:hover { 
+         box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+         color:#da2d2d;
+         }
+         .icon {
+         font-size: 14pt;
+         }
+         .bold{
+         font-weight:bold;
+         }
+         section {
+         border-top: 1mm dotted #444;
+         padding: 4mm 0 0 0;
+         }
+         section:first-child {
+         border-top: 0;
+         padding: 8mm 0 0 0;
+         }
+         section:last-child {
+         padding: 4mm 0 0 0;
+         }
+         .sectionTitle {
+         float: left;
+         width: 50mm;
+         margin-bottom:6mm; 
+         }
+         .sectionContent {
+         float: right;
+         width: 141mm;
+         }
+         .sectionTitle h1 {
+         font-family: 'Oswald', Helvetica, Arial, sans-serif;
+         font-weight: 400;
+         text-transform: uppercase;
+         font-size: 18pt;
+         color: #da2d2d;
+         }
+         .sectionContent h2 {
+         font-family: 'Oswald', Helvetica, Arial, sans-serif;
+         text-transform: uppercase;
+         font-size: 18pt;
+         }
+         .subDetails {
+         font-family: 'Lato', Helvetica, Arial, sans-serif;
+         font-size: 11pt;
+         font-weight:bold;
+         color: #da2d2d;
+         }
+         .nameDetails {
+         font-size: 11pt;
+         font-family: 'Lato', Helvetica, Arial, sans-serif;
+         color: #444;
+         text-transform: lowercase;
+         }
+         .keySkills {
+         list-style-type: none;
+         -moz-column-count:3;
+         -webkit-column-count:3;
+         column-count:3;
+         margin-bottom: 4mm;
+         font-size: 11pt;
+         color: #444;
+         line-height: 15pt;
+         }
+         .keySkills ul li {
+         margin-bottom: 6mm;
+         }
+         .clients {
+         list-style-type: none;
+         -moz-column-count:1;
+         -webkit-column-count:1;
+         column-count:1;
+         margin-bottom: 4mm;
+         font-size: 11pt;
+         color: #444;
+         line-height: 15pt;
+         text-decoration: none;
+         }
+         .clients ul li {
+         margin-bottom: 6mm;
+         }
+         .list {
+         list-style-type: none;
+         -moz-column-count:1;
+         -webkit-column-count:1;
+         column-count:1;
+         margin-bottom: 4mm;
+         font-size: 11pt;
+         color: #444;
+         line-height: 15pt;
+         }
+         button{
+         background-color: black;
+         width:245px;
+         border:none;
+         outline:0;
+         color: #fff;
+         font-family: 'Oswald', Helvetica, Arial, sans-serif;
+         font-size: 20px;
+         font-weight:bold;
+         padding: 8px 20px;
+         text-align: center;
+         text-decoration: none;
+         display: inline-block;
+         margin: 0px 550px;
+         cursor: pointer; 
+         text-transform:uppercase
+         }
+         button:hover {
+         box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+         color: #da2d2d;
+         }
+         @media print
+         {    
+         .no-print, .no-print *
+         {
+         display: none !important;
+         }
+         }
+         #button{
+         width:210mm;
+         height:40px;
+         position:fixed;
+         z-index: 10;
+         background: #da2d2d;
+         border-bottom:solid #da2d2d 6px;
+         top:0px;
+         }
+         .skewed-text {
+         font-style: italic;
+         margin-bottom: 0;
+         padding-bottom: 0;
+         }
+      </style>
+   </head>
+   <body id="top">
+      <!--Page 1-->
+      <page size="A4">
+         <div id="button" class="no-print">
+            <button type="button" onclick="myFunction()"><span class="button-txt"><i class="fa fa-print" aria-hidden="true"></i>
+            &nbsp;Print page</span></button>
+            <script>
+               function myFunction() {
+                   window.print();
+               }
+            </script>
+         </div>
+         <div class="cv">
+            <div id="header">
+               <div class="contactDetails">
+                  <ul>
+                     <li class="icon" title="Torbjørn Grimstad"><a href="mailto:torbjorn@myst.as"><i class="fa fa-envelope">&nbsp;&nbsp;</i>torbjorn@myst.as</a></li>
+                     <li class="icon" title="Torbjørn Grimstad"><a href="tel:90124628"><i class="fa fa-phone" aria-hidden="true"></i>&nbsp;&nbsp;+47 901 24 628</a></li>
+                     <li class="icon" title="Torbjørn Grimstad"><a href="https://www.linkedin.com/in/torbjorn-grimstad/"><i class="fa fa-linkedin" aria-hidden="true"></i>&nbsp;&nbsp;Torbjørn</a></li>
+                  </ul>
+               </div>
+            </div>
+            <div class="mainDetails">
+               <div id="headshot">
+                  <img id="avatar" src="images/prof_2.png" alt="Torbjørn Grimstad" title="Torbjørn Grimstad" />
+               </div>
+               <div id="name">
+                  <h1>Torbjørn</br>Grimstad<span class="nameDetails">&nbsp;&nbsp;7. Feb 1990</span></h1>
+               </div>
+               <div class="clear"></div>
+            </div>
+            <div id="mainArea">
+               <section>
+                  <article>
+                     <div class="sectionTitle">
+                        <h1>Bio</h1>
+                     </div>
+                     <div class="sectionContent">
+                        <p>
+                           Dynamic and innovative professional with over 6 years of leadership experience as a CEO, specializing in project management and cloud-based product development, particularly in the AEC and manufacturing sectors.
+                           Proven expertise in driving complex & fastpaced tech environments, cross-functional teams and technical programs, leveraging emerging technologies and blockchain to enhance user engagement and operational efficiencies.
+                        </p>
+                     </div>
+                  </article>
+                  <div class="clear"></div>
+               </section>
+               <section>
+                  <div class="sectionTitle">
+                     <h1>Skills</h1>
+                  </div>
+                  <div class="sectionContent">
+                     <ul class="keySkills">
+                        <li class="subDetails">Hard skills</li>
+                        <li><i class="fa fa-check" aria-hidden="true"></i>&nbsp;Blockchain</li>
+                        <li><i class="fa fa-check" aria-hidden="true"></i>&nbsp;3D</li>
+                        <li><i class="fa fa-check" aria-hidden="true"></i>&nbsp;AI</li>
+                        <li><i class="fa fa-check" aria-hidden="true"></i>&nbsp;HTML, CSS, JS/React</li>
+               
+                        <li class="subDetails">Soft skills</li>
+                        <li><i class="fa fa-check" aria-hidden="true"></i>&nbsp;Creativity</li>
+                        <li><i class="fa fa-check" aria-hidden="true"></i>&nbsp;Passionate about work</li>
+                        <li><i class="fa fa-check" aria-hidden="true"></i>&nbsp;Problem-solving</li>
+                        <li><i class="fa fa-check" aria-hidden="true"></i>&nbsp;Empathy </li>
+
+                        <li class="subDetails">Technical skills</li>
+                        <li><i class="fa fa-check" aria-hidden="true"></i>&nbsp;Project Management</li>
+                        <li><i class="fa fa-check" aria-hidden="true"></i>&nbsp;Database Management</li>
+                        <li><i class="fa fa-check" aria-hidden="true"></i>&nbsp;APIs and Integrations</li>
+                        <li><i class="fa fa-check" aria-hidden="true"></i>&nbsp;Cloud Computing</li>
+
+                     </ul>
+                  </div>
+                  <div class="clear"></div>
+               </section>
+               <section>
+                  <div class="sectionTitle">
+                     <h1>Own Products</h1>
+                  </div>
+                  <div class="sectionContent">
+                     <ul class="clients">
+                        <li title="Moonbear"><a href="https://moonbear.io" target="_blank">www.moonbear.io</a></li>
+                        <li title="Sedrapool"><a href="https://sedrapool.com" target="_blank">www.sedrapool.com</a></li>
+                     </ul>
+                  </div>
+                  <div class="clear"></div>
+               </section>
+               <section>
+                  <div class="sectionTitle">
+                     <h1>Experience</h1>
+                  </div>
+                  <div class="sectionContent">
+                     <ul class="list">
+                        <li>
+                           <span class="subDetails">Dec 2023 - Present.&nbsp;&nbsp;</span>
+                           <span class="bold">Moonbear.io - Founder</span>
+                           - Founder of Moonbear.io in collaboration with Innovation Norway, the world’s first to reward energy-efficient blockchain mining, leading a greener Blockchain future.
+                        </li>
+                        <li>
+                           <span class="subDetails">Sep 2017 - Aug 2023.&nbsp;&nbsp;</span>
+                           <span class="bold">Moicon AS - Co-founder & CEO</span>
+                           - As the co-founder and CEO of Moicon, I spearheaded the initial business plan and led Moicon in product development, sales and marketing. Securing a strategic partnership with Autodesk, we amplified our industry presence and diversified our products. Under my leadership, we achieved a client growth and a MRR surge in the first year through innovative strategies and a focus on addressing market challenges.
+                        </li>
+                        <li>
+                           <span class="subDetails">Oct 2016 - Aug 2017.&nbsp;&nbsp;</span>
+                           <span class="bold">Nævanyttig AS - Product Manager</span>
+                           - Launched a new product feature that resulted in increased user engagement within the first
+                           quarter.
+                        </li>
+                        <li>
+                           <span class="subDetails">Jun 2012 - Oct 2016.&nbsp;&nbsp;</span>
+                           <span class="bold">Kriminalomsorgen - Oslo Prison Grønland</span>
+                           - Operational and Investigative Strategy in Maximum-Security Correction.
+                        </li>
+                        <li>
+                           <span class="subDetails">Jun 2015 - Sep 2015.&nbsp;&nbsp;</span>
+                           <span class="bold">Telia - Business Develop Manager</span>
+                           - Established pivotal business relationships in the Telecom industry.
+                        </li>
+                        <li>
+                           <span class="subDetails">Aug 2014 - Jun 2015.&nbsp;&nbsp;</span>
+                           <span class="bold">Police - Police Detective</span>
+                           - Specialized in Cyber Crime. Undertook significant projects and research during the tenure.
+                        </li>
+                        <li>
+                           <span class="subDetails">Oct 2007 - Jun 2012.&nbsp;&nbsp;</span>
+                           <span class="bold">Kjelstad Bakeri AS - Distribution Assistant</span>
+                           - Worked on distributing food & beverage from food manufacturers.
+                        </li>
+                        <li>
+                           <span class="subDetails">Oct 2010 - Aug 2011.&nbsp;&nbsp;</span>
+                           <span class="bold">Norwegian Armed Forces - Military Police</span>
+                           - Enforced military laws and regulations. Preventing crime and responding to emergencies.
+                        </li>
+                        <li>
+                           <span class="subDetails">Aug 2006 - Oct 2009.&nbsp;&nbsp;</span>
+                           <span class="bold">LESS AS - Machine Operator</span>
+                           - Worked with production of thermal insulation products aimed at the health and disaster market.
+                        </li>
+                     </ul>
+                  </div>
+                  <div class="clear"></div>
+               </section>
+               <section>
+                  <div class="sectionTitle">
+                     <h1>Education</h1>
+                  </div>
+                  <div class="sectionContent">
+                     <ul class="list">
+                        <li><span class="subDetails">2017-2019&nbsp;&nbsp;</span>Kulturakademiet - University Exams</li>
+                        <li><span class="subDetails">2013-2015&nbsp;&nbsp;</span>The Norwegian Police University College</li>
+                        <li><span class="subDetails">2011-2012&nbsp;&nbsp;</span>Bjørknes Privatskole - Natural Science and Mathematics Studies</li>
+                        <li><span class="subDetails">2009-2010&nbsp;&nbsp;</span>Norwegian Armed Forces Military Police Academy</li>
+                     </ul>
+                  </div>
+                  <div class="clear"></div>
+               </section>
+               <section>
+                  <div class="sectionTitle">
+                     <h1>Get to know me</h1>
+                  </div>
+                  <div class="sectionContent">
+                     <ul class="list">
+                        <li>
+                           <i class="fa fa-check" aria-hidden="true"></i>&nbsp;I was awarded the “Forge Community Spotlight Award” by Autodesk.<br>
+                           <a href="https://aps.autodesk.com/blog/forge-devcon-germany-2019">https://aps.autodesk.com/blog/forge-devcon-germany-2019</a>
+                        </li>
+                        <li>
+                           <i class="fa fa-check" aria-hidden="true"></i>&nbsp;Short Video 1: <a href="https://www.youtube.com/shorts/z9ZcUa3q0eg">https://www.youtube.com/shorts/z9ZcUa3q0eg</a>
+                        </li>
+                        <li>
+                           <i class="fa fa-check" aria-hidden="true"></i>&nbsp;Short Video 2: <a href="https://www.linkedin.com/posts/torbjorn-grimstad_autodeskuniversity-lasvegas-lego-activity-7132588608535900160-xEhI?utm_source=share&utm_medium=member_desktop">https://www.linkedin.com/posts/torbjorn_autodeskuniversity</a>
+                        </li>
+                        <li>
+                           <i class="fa fa-check" aria-hidden="true"></i>&nbsp;Video with client: <a href="https://youtu.be/Wb7z782JXJA?si=bKBdXr1snY6OmprD">https://youtu.be/Wb7z782JXJA?si=bKBdXr1snY6OmprD</a>
+                        </li>
+                        <li>
+                           <i class="fa fa-check" aria-hidden="true"></i>&nbsp;Video with partner: <a href="https://www.linkedin.com/feed/update/urn:li:activity:7038418212417417216?utm_source=share&utm_medium=member_desktop">https://www.linkedin.com/feed/7038418</a>
+                        </li>
+                     </ul>
+                  </div>
+                  <div class="clear"></div>
+               </section>
+               <section>
+                  <div class="sectionTitle">
+                     <h1>Recommendations</h1>
+                  </div>
+                  <div class="sectionContent">
+                     <ul class="list">
+                        <span class="subDetails">Shakeel Mirza @ AUTODESK.&nbsp;&nbsp;</span><br>
+                        <span class="bold">Senior Manager - Global Business Development, Manufacturing</span>
+                           <p class="skewed-text">
+                              Torbjorn, a visionary CEO, leads Moicon, a software company revolutionizing the manufacturing industry. With a focus on user experience, he has gamified complex digital twin tools, making them accessible to all.
+                              Torbjorn's tech enthusiasm and strong communication skills shine as he actively promotes Moicon at industry events. Notably, he's responsive to customer needs, enhancing the platform for factory reconfigurations, empowering non-experts to explore diverse setups swiftly.
+                           </p>
+                     </ul>
+                     <ul class="list">
+                        <span class="subDetails">Victor Perez @ AUTODESK.&nbsp;&nbsp;</span><br>
+                        <span class="bold">3D & XR Specialist</span>
+                           <p class="skewed-text">
+                              Torbjørn is really passionate and knowledgeable about 3D and digital twins, and irradiates enthusiasm whenever he discusses this topics. Great guy!.
+                           </p>
+                     </ul>
+                     Additional recommendations and contact information are available upon request.
+                  </div>
+                  <div class="clear"></div>
+               </section>
+            </div>
+         </div>
+      </page>
+   </body>
+<html>  
+
